@@ -102,6 +102,17 @@ export default function Footer() {
             Lifetime warranty on all window tint installs · 120+ five-star reviews · Owner installed by Moe
           </p>
         </div>
+        <p className="mt-5 text-center text-xs text-muted">
+          Website and marketing by{" "}
+          <a
+            href="https://modernapexstrategies.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-cyan transition-colors hover:text-cyan-bright"
+          >
+            Modern Apex Strategies
+          </a>
+        </p>
       </div>
     </footer>
   );

@@ -16,9 +16,10 @@ interface Shade {
 
 const SHADES: Shade[] = [
   { id: "factory", label: "Factory Glass", vlt: "Clear", opacity: 0 },
-  { id: "light", label: "Light", vlt: "50%", opacity: 0.4 },
-  { id: "medium", label: "Medium", vlt: "35%", opacity: 0.66 },
-  { id: "dark", label: "Dark", vlt: "20%", opacity: 0.85 },
+  { id: "light", label: "Light", vlt: "50%", opacity: 0.38 },
+  { id: "medium", label: "Medium", vlt: "35%", opacity: 0.58 },
+  { id: "dark", label: "Dark", vlt: "20%", opacity: 0.78 },
+  { id: "darker", label: "Extra Dark", vlt: "15%", opacity: 0.9 },
   { id: "limo", label: "Limo", vlt: "5%", opacity: 1 },
 ];
 
@@ -87,7 +88,7 @@ export default function TintVisualizer() {
                 className="tint-range w-full"
               />
               {/* Shade chips */}
-              <div className="mt-4 grid grid-cols-5 gap-2">
+              <div className="mt-4 grid grid-cols-3 gap-2 sm:grid-cols-6">
                 {SHADES.map((s, i) => (
                   <button
                     key={s.id}
