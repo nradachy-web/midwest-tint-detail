@@ -42,7 +42,7 @@ export default function TintVisualizer() {
           <Reveal delay={0.1}>
             <p className="mt-4 text-silver">
               Slide through ceramic shades to see how dark your glass could go. Then build your free
-              quote and we will match the best legal setup for your vehicle.
+              quote and we will match the right setup for your vehicle.
             </p>
           </Reveal>
         </div>
@@ -109,7 +109,7 @@ export default function TintVisualizer() {
 
             <div className="mt-6 flex flex-col items-center justify-between gap-3 border-t border-[var(--hairline-col)] px-2 pt-5 sm:flex-row">
               <p className="text-sm text-muted">
-                Simulated preview. Final shade is matched to Michigan&apos;s legal limits for your vehicle.
+                Simulated preview. We will help you choose the best shade for your vehicle.
               </p>
               <Link
                 href="/contact"

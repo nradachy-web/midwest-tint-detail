@@ -286,7 +286,7 @@ export default function ServicePageTemplate({ id }: { id: string }) {
           <SectionHeading
             overline="Good to Know"
             title="Questions"
-            sub="Straight answers, no pressure. Still wondering something? Call Moe and ask."
+            sub="Straight answers, no pressure. Still wondering something? Call us and ask."
           />
 
           <RevealGroup className="mx-auto mt-12 max-w-3xl space-y-3" stagger={0.06}>

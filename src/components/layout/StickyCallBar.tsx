@@ -15,7 +15,7 @@ export default function StickyCallBar() {
         href={`tel:${BRAND.phoneTel}`}
         className="flex items-center justify-center gap-2 rounded-sm border border-[var(--glass-border-hover)] py-3 text-sm font-semibold text-light"
       >
-        <Phone className="h-4 w-4 text-cyan" /> Call Moe
+        <Phone className="h-4 w-4 text-cyan" /> Call Us
       </a>
       <Link
         href="/contact"

@@ -201,7 +201,7 @@ export const PROCESS = {
   steps: [
     {
       title: "Build your quote",
-      body: "Pick your year, make, and model, choose your services, and get a fast, free, no-pressure quote in under a minute. Prefer to talk? Call Moe directly.",
+      body: "Pick your year, make, and model, choose your services, and get a fast, free, no-pressure quote in under a minute. Prefer to talk? Call us directly.",
     },
     {
       title: "Lock in your spot",
@@ -209,7 +209,7 @@ export const PROCESS = {
     },
     {
       title: "We do the work right",
-      body: "Premium ceramic film and a clean, careful install by Moe and team, with the specs and legal setup explained up front.",
+      body: "Premium ceramic film and a clean, careful install by Moe and team, with the specs and setup explained up front.",
     },
     {
       title: "Drive away cooler and protected",
@@ -245,13 +245,6 @@ export const REVIEWS = {
         "He and another gentleman came out exactly at the time specified and did an amazing job. Could not be happier.",
     },
     {
-      name: "Jeff Bladel",
-      vehicle: "2021 Jeep Cherokee",
-      when: "4 months ago",
-      quote:
-        "They did an amazing job. My 2021 Cherokee looks and smells brand new.",
-    },
-    {
       name: "Joe Teichman",
       vehicle: "",
       when: "4 months ago",
@@ -271,8 +264,8 @@ export const REVIEWS = {
 // ---------------- FAQ (home) ----------------
 export const FAQ = [
   {
-    q: "Is window tint legal in Michigan?",
-    a: "Yes, within the rules. Michigan allows non-reflective tint only on the top 4 inches of the windshield, and aftermarket film on the front side windows is limited to that same top strip. On the rear side windows and the rear window you can go as dark as you want, with no minimum darkness. If your rear glass is dark, your vehicle needs side mirrors on both sides. We install the best legal setup for your vehicle and your goals, and we keep you out of trouble.",
+    q: "How dark can I tint my windows in Michigan?",
+    a: "Michigan allows non-reflective tint on the top 4 inches of the windshield, and aftermarket film on the front side windows is limited to that same top strip. On the rear side windows and the rear window you can go as dark as you want, with no minimum darkness. If your rear glass is dark, your vehicle needs side mirrors on both sides. We help you choose the right shade for your vehicle and your goals, and handle the install start to finish.",
   },
   {
     q: "What is the difference between ceramic and cheap dyed tint?",
@@ -288,7 +281,7 @@ export const FAQ = [
   },
   {
     q: "How much does window tint cost?",
-    a: "Every vehicle is different, so we give you a fast, free, exact quote instead of a one-size price. Build your quote in under a minute or call Moe. What you get either way is premium ceramic, a clean install, and a lifetime warranty, done right the first time.",
+    a: "Every vehicle is different, so we give you a fast, free, exact quote instead of a one-size price. Build your quote in under a minute or call us. What you get either way is premium ceramic, a clean install, and a lifetime warranty, done right the first time.",
   },
   {
     q: "What does the lifetime warranty cover?",
@@ -310,7 +303,7 @@ export const FAQ = [
 
 export const FINAL_CTA = {
   heading: "Ready for Cooler, Protected Glass?",
-  sub: "Get your free, no-pressure quote in under a minute, or call Moe and talk it through. Lifetime warranty included on every tint install.",
+  sub: "Get your free, no-pressure quote in under a minute, or call us and talk it through. Lifetime warranty included on every tint install.",
 } as const;
 
 // ---------------- SERVICE DETAIL PAGES ----------------
@@ -339,7 +332,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     longDescription: [
       "Factory glass leaves a lot on the table. It lets in heat, lets through UV that fades your interior and ages your skin, and does little for privacy. Ceramic window tint changes all of that. Our nano-ceramic film blocks up to 99% of UV rays and rejects a large share of the infrared heat you actually feel, so your cabin stays comfortable on the hottest Michigan days and your interior stays protected for the long haul.",
       "This is not the cheap dyed film that fades purple and bubbles after a couple of summers. Ceramic is color-stable, built to last the life of the vehicle, and completely non-metallic, which means it never interferes with your GPS, cell signal, radio, or Bluetooth. Every install is handled in a clean, dust-controlled process with crisp edges and no haze left behind, the way a car you just paid for deserves to be treated.",
-      "Moe and team install every job personally and back it with a lifetime warranty against bubbling, peeling, and discoloration. We will also walk you through Michigan's tint law so you get the best legal setup for your vehicle and your goals. Build your free quote in under a minute or call to check today's availability.",
+      "Moe and team install every job personally and back it with a lifetime warranty against bubbling, peeling, and discoloration. We will also walk you through Michigan's tint rules so you get the best setup for your vehicle and your goals. Build your free quote in under a minute or call to check today's availability.",
     ],
     benefits: [
       "Up to 99% UV protection for your skin and your interior",
@@ -349,14 +342,14 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       "Lifetime warranty on every install, with a clean, careful finish",
     ],
     process: [
-      { title: "Free quote and consult", body: "Tell us your year, make, and model and your goals. We recommend the right film and the best legal setup for Michigan." },
+      { title: "Free quote and consult", body: "Tell us your year, make, and model and your goals. We recommend the right film and the best setup for Michigan." },
       { title: "Prep and clean", body: "Each window is fully cleaned and prepped in a dust-controlled environment for a flawless bond." },
       { title: "Precision cut and fit", body: "Film is cut and shaped to your exact glass for tight, clean edges with no gaps or peeling." },
       { title: "Careful install", body: "Moe and team apply the film by hand, removing every bit of haze and ensuring a perfect, bubble-free finish." },
       { title: "Cure and care", body: "We explain cure time and aftercare so your tint sets perfectly, then back it with a lifetime warranty." },
     ],
     faqs: [
-      { q: "Is it legal in Michigan?", a: "Yes, within the law. Front side windows and the windshield are limited to the top 4 inches, while rear side and rear windows can be any darkness. We build the best legal setup for your vehicle." },
+      { q: "How dark can I go in Michigan?", a: "Front side windows and the windshield take film on the top few inches, while the rear side windows and rear window can be any darkness. We build the best setup for your vehicle." },
       { q: "How long until I can roll the windows down?", a: "Usually 2 to 4 days in warm weather and 5 to 7 days in cold or humid conditions. Keep windows up while the film cures." },
       { q: "Will it affect my electronics?", a: "No. Our ceramic film is non-metallic, so GPS, cell, radio, and Bluetooth all work normally." },
       { q: "How long does the install take?", a: "Most vehicles are done the same day. We give you a clear estimate when you book." },
@@ -369,8 +362,8 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       "Honest guidance on Michigan tint law",
     ],
     tiers: [
-      { name: "Front Two Windows", body: "Match your factory rear tint or add comfort and privacy up front, within Michigan's legal limits." },
-      { name: "Full Vehicle", body: "All legal windows tinted for complete comfort, privacy, and UV protection." },
+      { name: "Front Two Windows", body: "Match your factory rear tint or add comfort and privacy up front." },
+      { name: "Full Vehicle", body: "All windows tinted for complete comfort, privacy, and UV protection." },
       { name: "Full Vehicle + Windshield Strip", body: "Everything above plus a non-reflective top strip on the windshield to cut glare and sun." },
       { name: "Add-on: Clear Ceramic Windshield Film", body: "Maximum heat and UV rejection on the full windshield with a near-clear film. Ask if available for your vehicle." },
     ],
@@ -543,7 +536,7 @@ export const ABOUT = {
 export const QUOTE = {
   heading: "Get Your Free, No-Pressure Quote",
   intro:
-    "Pick your vehicle, choose your services, and get a fast, exact quote in under a minute. Prefer to talk it through? Call Moe directly at (313) 729-0005.",
+    "Pick your vehicle, choose your services, and get a fast, exact quote in under a minute. Prefer to talk it through? Call us directly at (313) 729-0005.",
   reassurance:
     "Lifetime warranty on every tint install. Premium ceramic, clean work, no spam, and no pressure.",
   steps: {
@@ -557,7 +550,7 @@ export const QUOTE = {
   success:
     "You are all set. Thanks for reaching out to Midwest Tint & Detail. Moe and the team will follow up shortly with your free, exact quote. Need it sooner? Call us at (313) 729-0005.",
   error:
-    "Something did not go through. Please try again, or just call Moe at (313) 729-0005 and we will take care of you.",
+    "Something did not go through. Please try again, or just call us at (313) 729-0005 and we will take care of you.",
 } as const;
 
 // ---------------- SEO ----------------
@@ -600,7 +593,7 @@ export const SEO: Record<string, { title: string; description: string }> = {
   contact: {
     title: "Get a Free Quote | Window Tinting & Detailing Plymouth MI | Midwest Tint & Detail",
     description:
-      "Get a fast, free, exact quote from Midwest Tint & Detail in Plymouth, MI. Pick your vehicle, choose your services, no pressure. Call Moe at (313) 729-0005 or build your quote online.",
+      "Get a fast, free, exact quote from Midwest Tint & Detail in Plymouth, MI. Pick your vehicle, choose your services, no pressure. Call us at (313) 729-0005 or build your quote online.",
   },
 };
 
@@ -637,7 +630,7 @@ export const CITIES: City[] = [
     name: "Northville",
     county: "the Wayne and Oakland County line",
     intro: [
-      "Just minutes north of our shop, Northville drivers count on Midwest Tint & Detail for premium ceramic window tinting that looks factory-clean and holds up for the life of the vehicle. From the historic downtown to the neighborhoods off Six Mile and Sheldon, we make it easy to get a flawless, legal tint without leaving the area.",
+      "Just minutes north of our shop, Northville drivers count on Midwest Tint & Detail for premium ceramic window tinting that looks factory-clean and holds up for the life of the vehicle. From the historic downtown to the neighborhoods off Six Mile and Sheldon, we make it easy to get a flawless tint without leaving the area.",
       "We install premium nano-ceramic film that blocks up to 99% of UV and a serious share of infrared heat, so your Northville commute stays cooler and your interior stays protected. Every install is owner-handled and backed by a lifetime warranty.",
     ],
     nearby: ["plymouth", "novi", "livonia"],
@@ -648,7 +641,7 @@ export const CITIES: City[] = [
     county: "Wayne County",
     intro: [
       "Canton is one of the busiest communities we serve, and a quick drive from our Plymouth shop. With so many new cars and daily commuters along Ford Road and Michigan Ave, Canton drivers come to Midwest Tint & Detail for ceramic window tint that cuts heat and glare and keeps their vehicle looking sharp.",
-      "We use premium ceramic film, not the cheap dyed tint that fades purple, and we walk you through Michigan's legal limits so your Canton tint is done right the first time. Owner installed by Moe and backed by a lifetime warranty.",
+      "We use premium ceramic film, not the cheap dyed tint that fades purple, and we walk you through your options so your Canton tint is done right the first time. Owner installed by Moe and backed by a lifetime warranty.",
     ],
     nearby: ["plymouth", "westland", "livonia"],
   },
@@ -667,7 +660,7 @@ export const CITIES: City[] = [
     name: "Novi",
     county: "Oakland County",
     intro: [
-      "Novi is one of the fastest-growing communities in Metro Detroit, and a short drive from our Plymouth shop. Whether you just picked up a new car near Twelve Oaks or you are protecting a daily driver, Novi customers trust Midwest Tint & Detail for clean, legal, premium ceramic window tint.",
+      "Novi is one of the fastest-growing communities in Metro Detroit, and a short drive from our Plymouth shop. Whether you just picked up a new car near Twelve Oaks or you are protecting a daily driver, Novi customers trust Midwest Tint & Detail for clean, premium ceramic window tint.",
       "We install ceramic film that keeps your cabin cooler, blocks the UV that fades interiors, and looks crisp for the life of the vehicle. Owner installed by Moe and backed by a lifetime warranty.",
     ],
     nearby: ["northville", "troy", "livonia"],
