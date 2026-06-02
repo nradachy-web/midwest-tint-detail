@@ -145,9 +145,8 @@ export default function AboutPage() {
                 Rooted in Plymouth, serving Metro Detroit
               </h2>
               <p className="mt-5 text-base sm:text-lg leading-relaxed text-silver max-w-xl">
-                A real shop at {BRAND.address.full}. Stop by, or ask about mobile
-                service for select jobs and we will come to you, at home, at the
-                office, even at a job site.
+                A real shop at {BRAND.address.full}. Proudly serving Plymouth,
+                Northville, Canton, Troy, Novi, Livonia, and Westland.
               </p>
 
               <div className="mt-7 flex flex-wrap gap-3">

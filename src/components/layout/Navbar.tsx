@@ -16,7 +16,7 @@ function Wordmark({ onClick }: { onClick?: () => void }) {
       <img
         src={asset("/logo.png")}
         alt={BRAND.name}
-        className="h-10 w-auto rounded-md bg-white px-2.5 py-1.5 shadow-sm ring-1 ring-black/5 transition-transform duration-300 group-hover:scale-105 md:h-12"
+        className="h-9 w-auto transition-transform duration-300 group-hover:scale-105 md:h-11"
       />
     </Link>
   );

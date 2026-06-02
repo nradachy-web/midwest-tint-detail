@@ -17,7 +17,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={asset("/logo.png")} alt={BRAND.name} className="mb-4 h-14 w-auto rounded-md bg-white px-3 py-2" />
+            <img src={asset("/logo.png")} alt={BRAND.name} className="mb-4 h-14 w-auto" />
             <p className="mb-3 text-sm leading-relaxed text-silver">
               Plymouth&apos;s trusted name for premium ceramic window tinting, paint correction,
               ceramic coating, and detailing. Done right the first time.
@@ -99,7 +99,7 @@ export default function Footer() {
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-[var(--hairline-col)] pt-6 text-center text-xs text-muted sm:flex-row sm:text-left">
           <p>© {BRAND.name}. All rights reserved. Plymouth, Michigan.</p>
           <p className="text-silver">
-            Lifetime warranty on all window tint installs · 120+ five-star reviews · Mobile service available
+            Lifetime warranty on all window tint installs · 120+ five-star reviews · Owner installed by Moe
           </p>
         </div>
       </div>

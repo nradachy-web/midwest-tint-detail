@@ -60,7 +60,7 @@ export const HERO = {
   headlineRestBefore: "Keep It ",
   headlineGlow: "Cool.",
   sub: "Premium ceramic window tint installed by Moe and team. Up to 99% UV protection and serious infrared heat rejection, backed by a lifetime warranty. Serving Plymouth, Northville, Canton, Troy, Novi, Livonia, and Westland.",
-  badges: ["Lifetime Warranty", "120+ Five-Star Reviews", "Mobile Service Available"],
+  badges: ["Lifetime Warranty", "120+ Five-Star Reviews", "Ceramic Heat Rejection"],
 } as const;
 
 // ---------------- STATS ----------------
@@ -148,9 +148,7 @@ export const SERVICES: Service[] = [
       "Deep interior cleaning, vacuum, and surface refresh",
       "Exterior wash, decontamination, and protective finish",
       "Stain, odor, and grime removal done properly",
-      "Interior only, exterior only, or full detail options",
-      "Mobile service available for select jobs",
-    ],
+      "Interior only, exterior only, or full detail options",    ],
     priceFraming: "Custom quote per package",
     cta: "Request a Quote",
     image: "/services/detailing.jpg",
@@ -185,11 +183,6 @@ export const WHY_US = {
       body: "Bubbling, peeling, or discoloration are covered, so you only pay once.",
     },
     {
-      icon: "Truck",
-      title: "We come to you",
-      body: "Mobile service is available for select jobs, at home, at the office, even at a job site.",
-    },
-    {
       icon: "Wind",
       title: "Clean, careful installs",
       body: "Dust-controlled work, sharp edges, no haze left behind, finished the way a new car deserves.",
@@ -212,7 +205,7 @@ export const PROCESS = {
     },
     {
       title: "Lock in your spot",
-      body: "We confirm your details and schedule a time that works for you, in the shop or mobile where available.",
+      body: "We confirm your details and schedule a time that works for you at our Plymouth shop.",
     },
     {
       title: "We do the work right",
@@ -296,10 +289,6 @@ export const FAQ = [
   {
     q: "How much does window tint cost?",
     a: "Every vehicle is different, so we give you a fast, free, exact quote instead of a one-size price. Build your quote in under a minute or call Moe. What you get either way is premium ceramic, a clean install, and a lifetime warranty, done right the first time.",
-  },
-  {
-    q: "Do you offer mobile service?",
-    a: "Yes, mobile service is available for select jobs. We have come out to homes, offices, and even a customer's restaurant. Ask when you build your quote or call, and we will tell you what we can do for your location.",
   },
   {
     q: "What does the lifetime warranty cover?",
@@ -481,15 +470,13 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     longDescription: [
       "A real detail is more than a car wash. It is a top-to-bottom reset that removes the dirt, grime, stains, and odors that build up over months of daily driving, and restores that clean, fresh feeling you get from a brand new vehicle. Whether your interior needs deep cleaning or your exterior needs decontamination and protection, we handle it properly, by hand, with the right products for each surface.",
       "Our interior detailing covers a thorough vacuum, surface cleaning, and refresh of your seats, carpets, panels, and glass, with attention to the stains, dust, and odors that everyday life leaves behind. Our exterior detailing includes a careful hand wash, decontamination, and a protective finish that brings back shine and helps your paint resist the elements. Choose interior only, exterior only, or a full detail that covers everything.",
-      "Moe and team treat every vehicle like it is their own, and the reviews say it best, customers tell us their cars look and smell brand new. For select jobs we even come to you, at home, the office, or a job site. Request your custom quote and tell us what your vehicle needs.",
+      "Moe and team treat every vehicle like it is their own, and the reviews say it best, customers tell us their cars look and smell brand new. Request your custom quote and tell us what your vehicle needs.",
     ],
     benefits: [
       "Deep interior cleaning, vacuum, and full surface refresh",
       "Exterior hand wash, decontamination, and protective finish",
       "Stain, odor, and grime removal done the right way",
-      "Interior only, exterior only, or full detail options",
-      "Mobile service available for select jobs",
-    ],
+      "Interior only, exterior only, or full detail options",    ],
     process: [
       { title: "Tell us what it needs", body: "Choose interior, exterior, or full, and let us know about any problem spots, stains, or odors." },
       { title: "Exterior wash and decontaminate", body: "A careful hand wash and decontamination to lift embedded grime safely." },
@@ -498,16 +485,12 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       { title: "Final walkthrough", body: "We make sure every detail meets the standard before you drive away." },
     ],
     faqs: [
-      { q: "Can you remove stains and odors?", a: "In most cases, yes. We tackle stains, dust, and odors with the right approach for your surfaces and tell you honestly what to expect." },
-      { q: "Do you offer mobile detailing?", a: "Yes, mobile service is available for select jobs. Ask about your location when you request a quote." },
-      { q: "How long does a detail take?", a: "It depends on the package and the condition of the vehicle. We give you a clear timeline when you book." },
+      { q: "Can you remove stains and odors?", a: "In most cases, yes. We tackle stains, dust, and odors with the right approach for your surfaces and tell you honestly what to expect." },      { q: "How long does a detail take?", a: "It depends on the package and the condition of the vehicle. We give you a clear timeline when you book." },
       { q: "Can I add a detail to my tint appointment?", a: "Absolutely. Many customers pair a detail with their tint. Add it to your quote." },
     ],
     whyUs: [
       "Done by hand with the right products for each surface",
-      "Interior, exterior, or full detail to fit your needs",
-      "Mobile service available for select jobs",
-      "Owner-led care from Moe and team",
+      "Interior, exterior, or full detail to fit your needs",      "Owner-led care from Moe and team",
       "Reviews that say it best: looks and smells brand new",
     ],
     tiers: [
@@ -546,13 +529,13 @@ export const ABOUT = {
   body: [
     "Midwest Tint & Detail is a locally owned shop in the heart of Plymouth, Michigan, built on a simple idea: treat every vehicle like it is your own, and do the work right the first time. Owner and lead installer Moe is hands-on with every job, which is exactly why customers keep mentioning him by name. When you call, you talk to the person doing the work, and that accountability shows up in the finish.",
     "We focus on what we do best: premium ceramic window tinting, paint correction, ceramic coating, and interior and exterior detailing. We use quality ceramic film instead of cheap dyed film, we take the time to do clean, careful installs, and we back every tint install with a lifetime warranty. We would rather earn a customer for years than win one on price, and that approach has built a 5.0 Google rating and more than 120 five-star reviews from drivers across Metro Detroit.",
-    "We also bring the shop to you. For select jobs, Moe and team offer mobile service, coming out to homes, offices, and job sites across the area. Reviews tell the story better than we can, customers say their cars look and smell brand new and that the service was professional, courteous, and on time, every time. Whether you just picked up a new car or want to protect one you love, we would be glad to help.",
+    "Reviews tell the story better than we can, customers say their cars look and smell brand new and that the service was professional, courteous, and on time, every time. Whether you just picked up a new car or want to protect one you love, we would be glad to help.",
   ],
   pillars: [
     { icon: "UserCheck", title: "Owner led", body: "Moe is on every job. Direct communication and real accountability." },
     { icon: "Gem", title: "Quality over price", body: "Premium ceramic and careful work, not the cheapest shortcut." },
     { icon: "ShieldCheck", title: "Backed for life", body: "Lifetime warranty on every tint install." },
-    { icon: "MapPin", title: "Local and convenient", body: "Rooted in Plymouth, with mobile service available for select jobs." },
+    { icon: "MapPin", title: "Local and convenient", body: "Rooted in Plymouth, serving Northville, Canton, Troy, Novi, Livonia, and Westland." },
   ],
 } as const;
 
@@ -602,7 +585,7 @@ export const SEO: Record<string, { title: string; description: string }> = {
   detailing: {
     title: "Car Detailing in Plymouth & Canton, MI | Midwest Tint & Detail",
     description:
-      "Interior and exterior car detailing in Plymouth, MI, by Moe and team. Deep cleaning, stain and odor removal, and protective finishes. Mobile service available. Free quote.",
+      "Interior and exterior car detailing in Plymouth, MI, by Moe and team. Deep cleaning, stain and odor removal, and protective finishes. Free quote.",
   },
   gallery: {
     title: "Tint & Detail Gallery | Before & After | Midwest Tint & Detail Plymouth MI",

@@ -234,7 +234,7 @@ export default function QuoteForm() {
                 </div>
                 <div>
                   <label className="mb-1.5 block text-sm font-medium text-silver">Anything we should know? <span className="text-muted">(optional)</span></label>
-                  <textarea className="field resize-none" rows={3} value={contact.notes} onChange={(e) => setContact((c) => ({ ...c, notes: e.target.value }))} placeholder="Timeline, mobile service, specific questions..." />
+                  <textarea className="field resize-none" rows={3} value={contact.notes} onChange={(e) => setContact((c) => ({ ...c, notes: e.target.value }))} placeholder="Timeline, specific questions, anything we should know..." />
                 </div>
               </div>
             )}
