@@ -53,12 +53,13 @@ export default function Footer() {
             </h4>
             <div className="flex flex-wrap gap-2">
               {BRAND.serviceArea.map((city) => (
-                <span
+                <Link
                   key={city}
-                  className="rounded-pill border border-[var(--glass-border)] bg-graphite/60 px-3 py-1 text-xs text-silver"
+                  href={`/window-tinting/${city.toLowerCase()}`}
+                  className="rounded-pill border border-[var(--glass-border)] bg-graphite/60 px-3 py-1 text-xs text-silver transition-colors hover:border-cyan hover:text-cyan"
                 >
                   {city}
-                </span>
+                </Link>
               ))}
             </div>
           </div>

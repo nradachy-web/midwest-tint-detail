@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL } from "@/lib/constants";
+import { SITE_URL, CITIES } from "@/lib/constants";
 
 export const dynamic = "force-static";
 
@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/gallery", priority: 0.7 },
     { path: "/about", priority: 0.7 },
     { path: "/contact", priority: 0.7 },
+    ...CITIES.map((c) => ({ path: `/window-tinting/${c.slug}`, priority: 0.8 })),
   ];
 
   return routes.map(({ path, priority }) => ({

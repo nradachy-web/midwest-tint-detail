@@ -611,3 +611,86 @@ export const SEO: Record<string, { title: string; description: string }> = {
 // fire client-side and route to /thank-you (the Google Ads conversion trigger).
 export const WEB3FORMS_KEY =
   process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "15b7e402-e68d-40cd-9507-b744e1540b8b";
+
+// ---------------- CITY / LOCAL SEO PAGES ----------------
+export interface City {
+  slug: string;
+  name: string;
+  county: string;
+  intro: string[]; // unique local copy for SEO
+  nearby: string[]; // slugs of nearby cities for internal links
+}
+
+export const CITIES: City[] = [
+  {
+    slug: "plymouth",
+    name: "Plymouth",
+    county: "Wayne County",
+    intro: [
+      "Midwest Tint & Detail is based right here in Plymouth, at 524 Farmer St just off downtown near Kellogg Park. As your hometown shop, we know exactly what Plymouth drivers want: clean, careful ceramic window tint that beats the Michigan heat and keeps that new-car feeling, without the wait or the runaround.",
+      "Whether you just picked up a new vehicle, want to cut the glare on your daily commute, or are protecting a car you love, Moe and the team handle every Plymouth tint job personally and back it with a lifetime warranty.",
+    ],
+    nearby: ["canton", "northville", "livonia"],
+  },
+  {
+    slug: "northville",
+    name: "Northville",
+    county: "the Wayne and Oakland County line",
+    intro: [
+      "Just minutes north of our shop, Northville drivers count on Midwest Tint & Detail for premium ceramic window tinting that looks factory-clean and holds up for the life of the vehicle. From the historic downtown to the neighborhoods off Six Mile and Sheldon, we make it easy to get a flawless, legal tint without leaving the area.",
+      "We install premium nano-ceramic film that blocks up to 99% of UV and a serious share of infrared heat, so your Northville commute stays cooler and your interior stays protected. Every install is owner-handled and backed by a lifetime warranty.",
+    ],
+    nearby: ["plymouth", "novi", "livonia"],
+  },
+  {
+    slug: "canton",
+    name: "Canton",
+    county: "Wayne County",
+    intro: [
+      "Canton is one of the busiest communities we serve, and a quick drive from our Plymouth shop. With so many new cars and daily commuters along Ford Road and Michigan Ave, Canton drivers come to Midwest Tint & Detail for ceramic window tint that cuts heat and glare and keeps their vehicle looking sharp.",
+      "We use premium ceramic film, not the cheap dyed tint that fades purple, and we walk you through Michigan's legal limits so your Canton tint is done right the first time. Owner installed by Moe and backed by a lifetime warranty.",
+    ],
+    nearby: ["plymouth", "westland", "livonia"],
+  },
+  {
+    slug: "troy",
+    name: "Troy",
+    county: "Oakland County",
+    intro: [
+      "Troy drivers who want their tint done right make the trip to Midwest Tint & Detail, and tell us it is worth it. From Somerset to the Big Beaver business corridor, Troy is full of late-model vehicles that deserve premium ceramic window film, not a bargain rush job.",
+      "Our nano-ceramic tint blocks up to 99% of UV and rejects serious infrared heat, with no signal interference and no purple fade. Every Troy job is owner-handled and covered by a lifetime warranty.",
+    ],
+    nearby: ["novi", "livonia", "northville"],
+  },
+  {
+    slug: "novi",
+    name: "Novi",
+    county: "Oakland County",
+    intro: [
+      "Novi is one of the fastest-growing communities in Metro Detroit, and a short drive from our Plymouth shop. Whether you just picked up a new car near Twelve Oaks or you are protecting a daily driver, Novi customers trust Midwest Tint & Detail for clean, legal, premium ceramic window tint.",
+      "We install ceramic film that keeps your cabin cooler, blocks the UV that fades interiors, and looks crisp for the life of the vehicle. Owner installed by Moe and backed by a lifetime warranty.",
+    ],
+    nearby: ["northville", "troy", "livonia"],
+  },
+  {
+    slug: "livonia",
+    name: "Livonia",
+    county: "Wayne County",
+    intro: [
+      "Sitting right between Plymouth and Detroit along I-96 and I-275, Livonia is one of the easiest cities for us to serve. Livonia drivers choose Midwest Tint & Detail for premium ceramic window tinting that beats the summer heat and keeps their vehicle comfortable and protected year round.",
+      "We never install cheap dyed film. Our nano-ceramic tint is color-stable, blocks up to 99% of UV, and is backed by a lifetime warranty, installed personally by Moe and the team.",
+    ],
+    nearby: ["plymouth", "westland", "northville"],
+  },
+  {
+    slug: "westland",
+    name: "Westland",
+    county: "Wayne County",
+    intro: [
+      "Just southeast of our Plymouth shop, Westland drivers count on Midwest Tint & Detail for ceramic window tint that cuts heat and glare without the dealership markup. It is a quick trip for a clean, professional install that holds up for years.",
+      "Premium ceramic film, honest guidance on Michigan tint law, and a lifetime warranty on every install. That is how we earn Westland customers for the long haul.",
+    ],
+    nearby: ["canton", "livonia", "plymouth"],
+  },
+];
+
