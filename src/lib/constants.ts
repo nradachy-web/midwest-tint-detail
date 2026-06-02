@@ -622,8 +622,9 @@ export const SEO: Record<string, { title: string; description: string }> = {
 };
 
 // ---------------- Web3Forms (client-side submit) ----------------
-// Set NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY (a GitHub repo variable / .env) to the real
-// Web3Forms access key for MidwestTintandDetail@gmail.com. Until set, the form still
-// routes to /thank-you (the conversion trigger) but does not deliver the lead email.
+// Web3Forms access key for MidwestTintandDetail@gmail.com. It is intentionally
+// public (it ships in the client bundle); lock it down via Allowed Origins in the
+// Web3Forms dashboard (nradachy-web.github.io + midwesttintdetail.com). Submissions
+// fire client-side and route to /thank-you (the Google Ads conversion trigger).
 export const WEB3FORMS_KEY =
-  process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "REPLACE_WITH_WEB3FORMS_ACCESS_KEY";
+  process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "15b7e402-e68d-40cd-9507-b744e1540b8b";
