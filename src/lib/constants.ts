@@ -99,7 +99,7 @@ export const SERVICES: Service[] = [
       "Non-metallic, so no interference with GPS, cell, or Bluetooth",
       "Backed by a lifetime warranty",
     ],
-    priceFraming: "Free exact quote in under a minute",
+    priceFraming: "Front two windows $149.99 · Full vehicle $299",
     cta: "Get My Tint Quote",
     image: "/services/window-tint.jpg",
     featured: true,
@@ -314,7 +314,7 @@ export interface ServiceDetail {
   process: { title: string; body: string }[];
   faqs: { q: string; a: string }[];
   whyUs: string[];
-  tiers?: { name: string; body: string }[];
+  tiers?: { name: string; body: string; price?: string }[];
 }
 
 export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
@@ -356,10 +356,10 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       "Honest recommendations for your vehicle and your goals",
     ],
     tiers: [
-      { name: "Front Two Windows", body: "Match your factory rear tint or add comfort and privacy up front." },
-      { name: "Full Vehicle", body: "All windows tinted for complete comfort, privacy, and UV protection." },
+      { name: "Front Two Windows", body: "Match your factory rear tint or add comfort and privacy up front.", price: "$149.99" },
+      { name: "Full Vehicle", body: "All windows tinted for complete comfort, privacy, and UV protection.", price: "$299" },
       { name: "Full Vehicle + Windshield Strip", body: "Everything above plus a tinted strip across the top of the windshield to cut sun and glare." },
-      { name: "Add-on: Clear Ceramic Windshield Film", body: "Maximum heat and UV rejection on the full windshield with a near-clear film. Ask if available for your vehicle." },
+      { name: "Add-on: Clear Ceramic Windshield Film", body: "Maximum heat and UV rejection on the full windshield with a near-clear film. Ask if available for your vehicle.", price: "$99" },
     ],
   },
   "paint-correction": {
@@ -542,7 +542,7 @@ export const QUOTE = {
   trustMicro: "5.0 stars · 120+ reviews · Lifetime warranty · No spam, no pressure",
   submit: "Send My Free Quote",
   success:
-    "You are all set. Thanks for reaching out to Midwest Tint & Detail. Moe and the team will follow up shortly with your free, exact quote. Need it sooner? Call us at (313) 729-0005.",
+    "You are all set. Thanks for reaching out to Midwest Tint & Detail. Somebody from our team will reach out shortly from (313) 729-0005 to confirm your quote and book your install, so keep an eye out for that number. Need it sooner? Call us anytime at (313) 729-0005.",
   error:
     "Something did not go through. Please try again, or just call us at (313) 729-0005 and we will take care of you.",
 } as const;

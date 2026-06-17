@@ -200,7 +200,7 @@ export default function QuoteForm() {
                   })}
                 </div>
                 <p className="text-xs text-muted">
-                  For tint, you can choose front windows, full vehicle, or full vehicle plus windshield strip after we connect.
+                  Tint pricing: front two windows $149.99, full vehicle $299, clear ceramic windshield film $99. Somebody from our team will confirm the details when they reach out.
                 </p>
               </div>
             )}
@@ -252,6 +252,12 @@ export default function QuoteForm() {
                   <ReviewRow label="Phone" value={contact.phone} />
                   {contact.email && <ReviewRow label="Email" value={contact.email} />}
                   {contact.notes && <ReviewRow label="Notes" value={contact.notes} />}
+                </div>
+                <div className="flex items-start gap-3 rounded-sm border border-cyan/30 bg-cyan/10 px-4 py-3">
+                  <Phone className="mt-0.5 h-4 w-4 shrink-0 text-cyan" aria-hidden />
+                  <p className="text-sm leading-relaxed text-light">
+                    After you send this, <span className="font-semibold text-cyan">somebody from our team will reach out from {BRAND.phoneDisplay}</span> to confirm your quote and book your install. Keep an eye out for that number.
+                  </p>
                 </div>
                 <p className="text-xs text-cyan">{QUOTE.trustMicro}</p>
               </div>

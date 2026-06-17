@@ -227,6 +227,11 @@ export default function ServicePageTemplate({ id }: { id: string }) {
                     <h3 className="font-display text-lg font-semibold text-white">
                       {tier.name}
                     </h3>
+                    {tier.price && (
+                      <p className="mt-2 font-display text-2xl font-bold text-chrome-cyan text-glow-cyan">
+                        {tier.price}
+                      </p>
+                    )}
                     <p className="mt-3 text-[0.975rem] leading-relaxed text-silver">
                       {tier.body}
                     </p>
