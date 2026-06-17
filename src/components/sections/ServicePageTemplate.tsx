@@ -261,7 +261,7 @@ export default function ServicePageTemplate({ id }: { id: string }) {
                     <span className="text-chrome-cyan text-glow-cyan">Midwest</span>
                   </>
                 }
-                sub="Owner led by Moe, premium materials, and a 5.0 Google rating from 120+ Metro Detroit drivers."
+                sub="Owner led by Moe, premium materials, and a 5.0 Google rating from 140+ Metro Detroit drivers."
               />
             </div>
             <div className="lg:col-span-7">

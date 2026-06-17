@@ -26,7 +26,7 @@ export default function Footer() {
               {Array.from({ length: 5 }).map((_, i) => (
                 <Star key={i} className="h-4 w-4 fill-[var(--color-star)] text-[var(--color-star)]" />
               ))}
-              <span className="ml-1 text-sm text-silver">5.0 · 120+ reviews</span>
+              <span className="ml-1 text-sm text-silver">5.0 · 140+ reviews</span>
             </div>
           </div>
 
@@ -100,7 +100,7 @@ export default function Footer() {
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-[var(--hairline-col)] pt-6 text-center text-xs text-muted sm:flex-row sm:text-left">
           <p>© {BRAND.name}. All rights reserved. Plymouth, Michigan.</p>
           <p className="text-silver">
-            Lifetime warranty on all window tint installs · 120+ five-star reviews · Owner installed by Moe
+            Lifetime warranty on all window tint installs · 140+ five-star reviews · Owner installed by Moe
           </p>
         </div>
         <p className="mt-5 text-center text-xs text-muted">
