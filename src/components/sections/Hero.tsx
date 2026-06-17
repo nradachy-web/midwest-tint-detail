@@ -95,7 +95,7 @@ export default function Hero() {
             className="flex flex-col gap-3 sm:flex-row sm:items-center"
           >
             <Link
-              href="/contact"
+              href="/window-tinting"
               className="shine glow inline-flex items-center justify-center rounded-sm bg-cyan px-8 py-4 font-display text-base font-semibold uppercase tracking-[0.08em] text-ink transition-colors hover:bg-cyan-bright"
             >
               {CTA.hero}

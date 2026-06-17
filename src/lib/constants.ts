@@ -40,7 +40,7 @@ export const BRAND = {
 
 export const CTA = {
   primary: "Get My Free Quote",
-  hero: "Get My Free Tint Quote",
+  hero: "Get Pricing",
   secondary: "Call (313) 729-0005",
 } as const;
 
@@ -100,7 +100,7 @@ export const SERVICES: Service[] = [
       "Backed by a lifetime warranty",
     ],
     priceFraming: "Front two windows $149.99 · Full vehicle $299",
-    cta: "Get My Tint Quote",
+    cta: "Get Pricing",
     image: "/services/window-tint.jpg",
     featured: true,
   },
