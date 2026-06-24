@@ -60,7 +60,7 @@ export const HERO = {
   headlineLead: "Block the Heat.",
   headlineRestBefore: "Keep It ",
   headlineGlow: "Cool.",
-  sub: "Premium ceramic window tint installed by Moe and team. Up to 99% UV protection and serious infrared heat rejection, backed by a lifetime warranty. Serving Plymouth, Northville, Canton, Troy, Novi, Livonia, and Westland.",
+  sub: "Premium ceramic window tint installed by our experts. Up to 99% UV protection and serious infrared heat rejection, backed by a lifetime warranty. Serving Plymouth, Northville, Canton, Troy, Novi, Livonia, and Westland.",
   badges: ["Lifetime Warranty", "140+ Five-Star Reviews", "Ceramic Heat Rejection"],
 } as const;
 
@@ -170,8 +170,8 @@ export const WHY_US = {
   reasons: [
     {
       icon: "UserCheck",
-      title: "Owner installed by Moe",
-      body: "You deal directly with the person doing the work. No handoffs, no shortcuts, full accountability on every job.",
+      title: "Installed by our experts",
+      body: "You deal directly with the people doing the work. No handoffs, no shortcuts, full accountability on every job.",
     },
     {
       icon: "Gem",
@@ -210,7 +210,7 @@ export const PROCESS = {
     },
     {
       title: "We do the work right",
-      body: "Premium ceramic film and a clean, careful install by Moe and team, with the specs and setup explained up front.",
+      body: "Premium ceramic film and a clean, careful install by our experts, with the specs and setup explained up front.",
     },
     {
       title: "Drive away cooler and protected",
@@ -229,14 +229,14 @@ export const REVIEWS = {
       vehicle: "Nissan Rogue",
       when: "1 week ago",
       quote:
-        "Just got my Nissan Rogue tinted with them and the experience was great. Moe was able to answer all of my questions and made the whole process easy.",
+        "Just got my Nissan Rogue tinted with them and the experience was great. The team answered all of my questions and made the whole process easy.",
     },
     {
       name: "Nick Sheild",
       vehicle: "Chevy Blazer",
       when: "4 months ago",
       quote:
-        "Moe came out to my restaurant and did a fantastic job on my Chevy Blazer. Great customer service from start to finish.",
+        "They came out to my restaurant and did a fantastic job on my Chevy Blazer. Great customer service from start to finish.",
     },
     {
       name: "Sandra Killmar",
@@ -257,7 +257,7 @@ export const REVIEWS = {
       vehicle: "",
       when: "5 months ago",
       quote:
-        "Moe and the team did a phenomenal job. Professional, efficient, and great quality service.",
+        "The team did a phenomenal job. Professional, efficient, and great quality service.",
     },
   ],
 } as const;
@@ -294,7 +294,7 @@ export const FAQ = [
   },
   {
     q: "Why choose you over a cheaper shop?",
-    a: "We are not the cheapest, and that is on purpose. You get owner-installed work by Moe, premium ceramic film, 140+ five-star reviews, and a lifetime warranty. It is the shop you only pay once.",
+    a: "We are not the cheapest, and that is on purpose. You get work installed by our experts, premium ceramic film, 140+ five-star reviews, and a lifetime warranty. It is the shop you only pay once.",
   },
 ] as const;
 
@@ -325,11 +325,11 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     href: "/window-tinting",
     image: "/services/window-tint.jpg",
     heroSubtitle:
-      "Premium nano-ceramic window tint installed by Moe and team. Cooler cabin, blocked UV, and a lifetime warranty, for drivers who want it done right.",
+      "Premium nano-ceramic window tint installed by our experts. Cooler cabin, blocked UV, and a lifetime warranty, for drivers who want it done right.",
     longDescription: [
       "Factory glass leaves a lot on the table. It lets in heat, lets through UV that fades your interior and ages your skin, and does little for privacy. Ceramic window tint changes all of that. Our nano-ceramic film blocks up to 99% of UV rays and rejects a large share of the infrared heat you actually feel, so your cabin stays comfortable on the hottest Michigan days and your interior stays protected for the long haul.",
       "This is not the cheap dyed film that fades purple and bubbles after a couple of summers. Ceramic is color-stable, built to last the life of the vehicle, and completely non-metallic, which means it never interferes with your GPS, cell signal, radio, or Bluetooth. Every install is handled in a clean, dust-controlled process with crisp edges and no haze left behind, the way a car you just paid for deserves to be treated.",
-      "Moe and team install every job personally and back it with a lifetime warranty against bubbling, peeling, and discoloration. Build your free quote in under a minute or call to check today's availability.",
+      "Our experts install every job personally and back it with a lifetime warranty against bubbling, peeling, and discoloration. Build your free quote in under a minute or call to check today's availability.",
     ],
     benefits: [
       "Up to 99% UV protection for your skin and your interior",
@@ -342,7 +342,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       { title: "Free quote and consult", body: "Tell us your year, make, and model and your goals. We recommend the right film and the best setup for Michigan." },
       { title: "Prep and clean", body: "Each window is fully cleaned and prepped in a dust-controlled environment for a flawless bond." },
       { title: "Precision cut and fit", body: "Film is cut and shaped to your exact glass for tight, clean edges with no gaps or peeling." },
-      { title: "Careful install", body: "Moe and team apply the film by hand, removing every bit of haze and ensuring a perfect, bubble-free finish." },
+      { title: "Careful install", body: "Our experts apply the film by hand, removing every bit of haze and ensuring a perfect, bubble-free finish." },
       { title: "Cure and care", body: "We explain cure time and aftercare so your tint sets perfectly, then back it with a lifetime warranty." },
     ],
     faqs: [      { q: "How long until I can roll the windows down?", a: "Usually 2 to 4 days in warm weather and 5 to 7 days in cold or humid conditions. Keep windows up while the film cures." },
@@ -350,7 +350,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       { q: "How long does the install take?", a: "Most vehicles are done the same day. We give you a clear estimate when you book." },
     ],
     whyUs: [
-      "Owner installed by Moe, with full accountability on every job",
+      "Installed by our experts, with full accountability on every job",
       "Premium nano-ceramic film, never cheap dyed film",
       "Lifetime warranty against bubbling, peeling, and discoloration",
       "Clean, dust-controlled installs with sharp, professional edges",
@@ -369,11 +369,11 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     href: "/paint-correction",
     image: "/services/paint-correction.jpg",
     heroSubtitle:
-      "Remove the swirls, scratches, and haze hiding your paint's true depth. Restored by hand by Moe and team.",
+      "Remove the swirls, scratches, and haze hiding your paint's true depth. Restored by hand by our experts.",
     longDescription: [
       "Over time, automatic car washes, improper drying, and everyday wear leave your paint covered in fine swirl marks, scratches, and a dull haze. You usually only notice it in direct sunlight, when the finish looks cloudy instead of crisp. Paint correction fixes that at the source by carefully removing those imperfections rather than hiding them, bringing back the clarity, gloss, and depth your paint had when it was new.",
       "Our process is multi-stage and tailored to your specific paint and its condition. We assess the finish, then refine it through the right combination of cutting and polishing to safely remove defects while protecting the clear coat. This is meticulous work that takes patience, and we never rush it. The result is a true mirror finish with reflections that look sharp and deep instead of foggy.",
-      "Paint correction is also the proper first step before any ceramic coating. Sealing a flawed finish only locks in the swirls, so we correct first and protect second. Whether you are prepping for a coating or just want your vehicle looking its absolute best, Moe and team handle it with care. Request your custom quote today.",
+      "Paint correction is also the proper first step before any ceramic coating. Sealing a flawed finish only locks in the swirls, so we correct first and protect second. Whether you are prepping for a coating or just want your vehicle looking its absolute best, our experts handle it with care. Request your custom quote today.",
     ],
     benefits: [
       "Removes swirl marks, light scratches, oxidation, and haze",
@@ -399,7 +399,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       "Careful, multi-stage correction tailored to your paint",
       "Honest assessment of what your finish can realistically achieve",
       "The right prep before any ceramic coating",
-      "Owner-led work by Moe with patient, detailed standards",
+      "Expert-led work with patient, detailed standards",
       "Local Plymouth shop trusted by 140+ five-star customers",
     ],
   },
@@ -413,7 +413,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     longDescription: [
       "A ceramic coating is the best long-term protection you can give your paint. It bonds to your clear coat and forms a hard, hydrophobic layer that shields your finish from UV rays, road grime, bird droppings, bug splatter, and the contaminants that dull and damage paint over time. Water and dirt bead up and slide right off, which means your vehicle stays cleaner longer and is far easier to wash.",
       "Beyond protection, a quality coating adds a deep, glossy, wet-looking finish that ordinary wax simply cannot match, and it lasts for years instead of weeks. For it to perform and look its best, the paint underneath needs to be flawless, which is why we pair coatings with paint correction. We correct first to remove swirls and defects, then seal that clean finish so the coating protects your paint at its absolute best.",
-      "Moe and team apply every coating with care in a controlled environment, and we walk you through the maintenance that keeps it performing for the long haul. If you want lasting gloss, easier washes, and serious protection for a vehicle you plan to keep, this is the upgrade. Request your custom quote today.",
+      "Our experts apply every coating with care in a controlled environment, and we walk you through the maintenance that keeps it performing for the long haul. If you want lasting gloss, easier washes, and serious protection for a vehicle you plan to keep, this is the upgrade. Request your custom quote today.",
     ],
     benefits: [
       "Long-lasting protection against UV, grime, and contaminants",
@@ -426,7 +426,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       { title: "Consult and quote", body: "We discuss your goals, your vehicle, and the right coating package for how long you plan to keep it." },
       { title: "Paint correction", body: "We correct the finish first so the coating seals flawless paint, not flaws." },
       { title: "Surface prep", body: "The paint is decontaminated and wiped down so the coating bonds properly." },
-      { title: "Coating application", body: "Moe and team apply the coating by hand in a controlled environment for even, complete coverage." },
+      { title: "Coating application", body: "Our experts apply the coating by hand in a controlled environment for even, complete coverage." },
       { title: "Cure and care", body: "The coating is given time to cure, and we explain the simple maintenance that keeps it performing for years." },
     ],
     faqs: [
@@ -437,7 +437,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     ],
     whyUs: [
       "Correction-first approach so your coating seals flawless paint",
-      "Applied by hand by Moe and team in a controlled environment",
+      "Applied by hand by our experts in a controlled environment",
       "Clear guidance on the right package for your goals",
       "Honest maintenance advice so your coating lasts",
       "Trusted local Plymouth shop with a 5.0 Google rating",
@@ -458,7 +458,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     longDescription: [
       "A real detail is more than a car wash. It is a top-to-bottom reset that removes the dirt, grime, stains, and odors that build up over months of daily driving, and restores that clean, fresh feeling you get from a brand new vehicle. Whether your interior needs deep cleaning or your exterior needs decontamination and protection, we handle it properly, by hand, with the right products for each surface.",
       "Our interior detailing covers a thorough vacuum, surface cleaning, and refresh of your seats, carpets, panels, and glass, with attention to the stains, dust, and odors that everyday life leaves behind. Our exterior detailing includes a careful hand wash, decontamination, and a protective finish that brings back shine and helps your paint resist the elements. Choose interior only, exterior only, or a full detail that covers everything.",
-      "Moe and team treat every vehicle like it is their own, and the reviews say it best, customers tell us their cars look and smell brand new. Request your custom quote and tell us what your vehicle needs.",
+      "Our experts treat every vehicle like it is their own, and the reviews say it best, customers tell us their cars look and smell brand new. Request your custom quote and tell us what your vehicle needs.",
     ],
     benefits: [
       "Deep interior cleaning, vacuum, and full surface refresh",
@@ -478,7 +478,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     ],
     whyUs: [
       "Done by hand with the right products for each surface",
-      "Interior, exterior, or full detail to fit your needs",      "Owner-led care from Moe and team",
+      "Interior, exterior, or full detail to fit your needs",      "Hands-on care from our experts",
       "Reviews that say it best: looks and smells brand new",
     ],
     tiers: [
@@ -500,7 +500,7 @@ export const SERVICE_ORDER = [
 export const GALLERY = {
   heading: "The Work Speaks for Itself",
   intro:
-    "Real vehicles, real results. Ceramic tint, paint correction, ceramic coating, and detailing done by Moe and team right here in Plymouth. Drag the slider to see the difference.",
+    "Real vehicles, real results. Ceramic tint, paint correction, ceramic coating, and detailing done by our experts right here in Plymouth. Drag the slider to see the difference.",
   sub: "See something you like? Build your free quote in under a minute or call (313) 729-0005.",
   items: [
     { image: "/services/window-tint.jpg", title: "Ceramic tint, clean edges", caption: "Cooler cabin, blocked UV, and a clean, even shade across every window." },
@@ -513,14 +513,14 @@ export const GALLERY = {
 // ---------------- ABOUT ----------------
 export const ABOUT = {
   heading: "Plymouth's Trusted Tint & Detail Shop",
-  subheading: "Owner led by Moe. Built on doing it right.",
+  subheading: "Led by our experts. Built on doing it right.",
   body: [
-    "Midwest Tint & Detail is a locally owned shop in the heart of Plymouth, Michigan, built on a simple idea: treat every vehicle like it is your own, and do the work right the first time. Owner and lead installer Moe is hands-on with every job, which is exactly why customers keep mentioning him by name. When you call, you talk to the person doing the work, and that accountability shows up in the finish.",
+    "Midwest Tint & Detail is a locally owned shop in the heart of Plymouth, Michigan, built on a simple idea: treat every vehicle like it is your own, and do the work right the first time. Our experts are hands-on with every job, and that hands-on standard is exactly why customers keep coming back. When you call, you talk to the people doing the work, and that accountability shows up in the finish.",
     "We focus on what we do best: premium ceramic window tinting, paint correction, ceramic coating, and interior and exterior detailing. We use quality ceramic film instead of cheap dyed film, we take the time to do clean, careful installs, and we back every tint install with a lifetime warranty. We would rather earn a customer for years than win one on price, and that approach has built a 5.0 Google rating and more than 140 five-star reviews from drivers across Metro Detroit.",
     "Reviews tell the story better than we can, customers say their cars look and smell brand new and that the service was professional, courteous, and on time, every time. Whether you just picked up a new car or want to protect one you love, we would be glad to help.",
   ],
   pillars: [
-    { icon: "UserCheck", title: "Owner led", body: "Moe is on every job. Direct communication and real accountability." },
+    { icon: "UserCheck", title: "Expert led", body: "Our experts are on every job. Direct communication and real accountability." },
     { icon: "Gem", title: "Quality over price", body: "Premium ceramic and careful work, not the cheapest shortcut." },
     { icon: "ShieldCheck", title: "Backed for life", body: "Lifetime warranty on every tint install." },
     { icon: "MapPin", title: "Local and convenient", body: "Rooted in Plymouth, serving Northville, Canton, Troy, Novi, Livonia, and Westland." },
@@ -553,12 +553,12 @@ export const SEO: Record<string, { title: string; description: string }> = {
   home: {
     title: "Window Tinting in Plymouth, MI | Midwest Tint & Detail",
     description:
-      "Premium ceramic window tinting in Plymouth, MI, by Moe and team. Up to 99% UV protection, serious heat rejection, and a lifetime warranty. 140+ five-star reviews. Free quote: (313) 729-0005.",
+      "Premium ceramic window tinting in Plymouth, MI, by our experts. Up to 99% UV protection, serious heat rejection, and a lifetime warranty. 140+ five-star reviews. Free quote: (313) 729-0005.",
   },
   "window-tint": {
     title: "Ceramic Window Tinting Plymouth, Northville & Canton MI | Midwest Tint & Detail",
     description:
-      "Premium ceramic window tint installed by Moe in Plymouth, MI. Up to 99% UV protection, infrared heat rejection, no signal interference, and a lifetime warranty. Get a free quote today.",
+      "Premium ceramic window tint installed by our experts in Plymouth, MI. Up to 99% UV protection, infrared heat rejection, no signal interference, and a lifetime warranty. Get a free quote today.",
   },
   "paint-correction": {
     title: "Paint Correction in Plymouth & Novi, MI | Midwest Tint & Detail",
@@ -573,7 +573,7 @@ export const SEO: Record<string, { title: string; description: string }> = {
   detailing: {
     title: "Car Detailing in Plymouth & Canton, MI | Midwest Tint & Detail",
     description:
-      "Interior and exterior car detailing in Plymouth, MI, by Moe and team. Deep cleaning, stain and odor removal, and protective finishes. Free quote.",
+      "Interior and exterior car detailing in Plymouth, MI, by our experts. Deep cleaning, stain and odor removal, and protective finishes. Free quote.",
   },
   gallery: {
     title: "Tint & Detail Gallery | Before & After | Midwest Tint & Detail Plymouth MI",
@@ -583,12 +583,12 @@ export const SEO: Record<string, { title: string; description: string }> = {
   blog: {
     title: "Tint & Detail Tips & Care Guides | Midwest Tint & Detail Blog | Plymouth, MI",
     description:
-      "Ceramic tint care, paint correction, ceramic coating, and car detailing guides from Midwest Tint & Detail in Plymouth, MI. Straight answers from Moe and the team. Free quote: (313) 729-0005.",
+      "Ceramic tint care, paint correction, ceramic coating, and car detailing guides from Midwest Tint & Detail in Plymouth, MI. Straight answers from our experts. Free quote: (313) 729-0005.",
   },
   about: {
-    title: "About Midwest Tint & Detail | Owner Led by Moe | Plymouth, MI",
+    title: "About Midwest Tint & Detail | Led by Our Experts | Plymouth, MI",
     description:
-      "Midwest Tint & Detail is a locally owned Plymouth, MI, shop led by Moe. Premium ceramic tint, paint correction, coating, and detailing, backed by a lifetime warranty and 140+ five-star reviews.",
+      "Midwest Tint & Detail is a locally owned Plymouth, MI, shop led by our experts. Premium ceramic tint, paint correction, coating, and detailing, backed by a lifetime warranty and 140+ five-star reviews.",
   },
   contact: {
     title: "Get a Free Quote | Window Tinting & Detailing Plymouth MI | Midwest Tint & Detail",
@@ -621,7 +621,7 @@ export const CITIES: City[] = [
     county: "Wayne County",
     intro: [
       "Midwest Tint & Detail is based right here in Plymouth, at 524 Farmer St just off downtown near Kellogg Park. As your hometown shop, we know exactly what Plymouth drivers want: clean, careful ceramic window tint that beats the Michigan heat and keeps that new-car feeling, without the wait or the runaround.",
-      "Whether you just picked up a new vehicle, want to cut the glare on your daily commute, or are protecting a car you love, Moe and the team handle every Plymouth tint job personally and back it with a lifetime warranty.",
+      "Whether you just picked up a new vehicle, want to cut the glare on your daily commute, or are protecting a car you love, our experts handle every Plymouth tint job personally and back it with a lifetime warranty.",
     ],
     nearby: ["canton", "northville", "livonia"],
   },
@@ -641,7 +641,7 @@ export const CITIES: City[] = [
     county: "Wayne County",
     intro: [
       "Canton is one of the busiest communities we serve, and a quick drive from our Plymouth shop. With so many new cars and daily commuters along Ford Road and Michigan Ave, Canton drivers come to Midwest Tint & Detail for ceramic window tint that cuts heat and glare and keeps their vehicle looking sharp.",
-      "We use premium ceramic film, not the cheap dyed tint that fades purple, and we walk you through your options so your Canton tint is done right the first time. Owner installed by Moe and backed by a lifetime warranty.",
+      "We use premium ceramic film, not the cheap dyed tint that fades purple, and we walk you through your options so your Canton tint is done right the first time. Installed by our experts and backed by a lifetime warranty.",
     ],
     nearby: ["plymouth", "westland", "livonia"],
   },
@@ -661,7 +661,7 @@ export const CITIES: City[] = [
     county: "Oakland County",
     intro: [
       "Novi is one of the fastest-growing communities in Metro Detroit, and a short drive from our Plymouth shop. Whether you just picked up a new car near Twelve Oaks or you are protecting a daily driver, Novi customers trust Midwest Tint & Detail for clean, premium ceramic window tint.",
-      "We install ceramic film that keeps your cabin cooler, blocks the UV that fades interiors, and looks crisp for the life of the vehicle. Owner installed by Moe and backed by a lifetime warranty.",
+      "We install ceramic film that keeps your cabin cooler, blocks the UV that fades interiors, and looks crisp for the life of the vehicle. Installed by our experts and backed by a lifetime warranty.",
     ],
     nearby: ["northville", "troy", "livonia"],
   },
@@ -671,7 +671,7 @@ export const CITIES: City[] = [
     county: "Wayne County",
     intro: [
       "Sitting right between Plymouth and Detroit along I-96 and I-275, Livonia is one of the easiest cities for us to serve. Livonia drivers choose Midwest Tint & Detail for premium ceramic window tinting that beats the summer heat and keeps their vehicle comfortable and protected year round.",
-      "We never install cheap dyed film. Our nano-ceramic tint is color-stable, blocks up to 99% of UV, and is backed by a lifetime warranty, installed personally by Moe and the team.",
+      "We never install cheap dyed film. Our nano-ceramic tint is color-stable, blocks up to 99% of UV, and is backed by a lifetime warranty, installed personally by our experts.",
     ],
     nearby: ["plymouth", "westland", "northville"],
   },

@@ -68,7 +68,7 @@ const localBusinessJsonLd = {
   "@type": "AutoRepair",
   name: BRAND.name,
   description:
-    "Plymouth, Michigan shop specializing in premium ceramic window tinting, paint correction, ceramic coating, and interior and exterior detailing. Owner installed by Moe, backed by a lifetime warranty on all tint installs.",
+    "Plymouth, Michigan shop specializing in premium ceramic window tinting, paint correction, ceramic coating, and interior and exterior detailing. Installed by our experts, backed by a lifetime warranty on all tint installs.",
   image: `${SITE_URL}/og-image.jpg`,
   url: SITE_URL,
   telephone: BRAND.phoneTel,

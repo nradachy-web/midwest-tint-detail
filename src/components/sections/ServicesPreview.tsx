@@ -19,7 +19,7 @@ export default function ServicesPreview() {
         <SectionHeading
           overline="What We Do"
           title="Four Ways We Make Your Car Better"
-          sub="Ceramic tint, paint correction, ceramic coating, and detailing. Owner installed by Moe and team, done right the first time."
+          sub="Ceramic tint, paint correction, ceramic coating, and detailing. Installed by our experts, done right the first time."
         />
 
         <RevealGroup

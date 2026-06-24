@@ -100,7 +100,7 @@ export default function Footer() {
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-[var(--hairline-col)] pt-6 text-center text-xs text-muted sm:flex-row sm:text-left">
           <p>© {BRAND.name}. All rights reserved. Plymouth, Michigan.</p>
           <p className="text-silver">
-            Lifetime warranty on all window tint installs · 140+ five-star reviews · Owner installed by Moe
+            Lifetime warranty on all window tint installs · 140+ five-star reviews · Installed by our experts
           </p>
         </div>
         <p className="mt-5 text-center text-xs text-muted">

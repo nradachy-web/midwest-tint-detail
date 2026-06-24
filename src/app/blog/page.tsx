@@ -34,8 +34,8 @@ export default function BlogPage() {
               <span className="text-chrome-cyan text-glow-cyan">Explained</span>
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-silver max-w-2xl">
-              Care guides, straight answers, and shop notes from Moe and the
-              team. Everything worth knowing about keeping your tint, paint, and
+              Care guides, straight answers, and shop notes from our experts.
+              Everything worth knowing about keeping your tint, paint, and
               interior looking their best through Michigan summers and winters.
             </p>
           </Reveal>
