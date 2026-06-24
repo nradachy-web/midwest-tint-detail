@@ -56,18 +56,18 @@ export const NAV_LINKS = [
 
 // ---------------- HERO ----------------
 export const HERO = {
-  eyebrow: "140+ Five-Star Reviews · Plymouth, MI · Lifetime Tint Warranty",
+  eyebrow: "150+ Five-Star Reviews · Plymouth, MI · Lifetime Tint Warranty",
   headlineLead: "Block the Heat.",
   headlineRestBefore: "Keep It ",
   headlineGlow: "Cool.",
   sub: "Premium ceramic window tint installed by our experts. Up to 99% UV protection and serious infrared heat rejection, backed by a lifetime warranty. Serving Plymouth, Northville, Canton, Troy, Novi, Livonia, and Westland.",
-  badges: ["Lifetime Warranty", "140+ Five-Star Reviews", "Ceramic Heat Rejection"],
+  badges: ["Lifetime Warranty", "150+ Five-Star Reviews", "Ceramic Heat Rejection"],
 } as const;
 
 // ---------------- STATS ----------------
 export const STATS = [
   { value: "5.0", label: "Google rating" },
-  { value: "140+", label: "Five-star reviews" },
+  { value: "150+", label: "Five-star reviews" },
   { value: "Lifetime", label: "Warranty on every tint install" },
   { value: "99%", label: "UV protection with ceramic film" },
 ] as const;
@@ -221,7 +221,7 @@ export const PROCESS = {
 
 // ---------------- REVIEWS ----------------
 export const REVIEWS = {
-  heading: "Trusted by 140+ Five-Star Customers",
+  heading: "Trusted by 150+ Five-Star Customers",
   intro: "Real reviews from real Metro Detroit drivers. 5.0 on Google and counting.",
   items: [
     {
@@ -294,7 +294,7 @@ export const FAQ = [
   },
   {
     q: "Why choose you over a cheaper shop?",
-    a: "We are not the cheapest, and that is on purpose. You get work installed by our experts, premium ceramic film, 140+ five-star reviews, and a lifetime warranty. It is the shop you only pay once.",
+    a: "We are not the cheapest, and that is on purpose. You get work installed by our experts, premium ceramic film, 150+ five-star reviews, and a lifetime warranty. It is the shop you only pay once.",
   },
 ] as const;
 
@@ -400,7 +400,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       "Honest assessment of what your finish can realistically achieve",
       "The right prep before any ceramic coating",
       "Expert-led work with patient, detailed standards",
-      "Local Plymouth shop trusted by 140+ five-star customers",
+      "Local Plymouth shop trusted by 150+ five-star customers",
     ],
   },
   "ceramic-coating": {
@@ -516,7 +516,7 @@ export const ABOUT = {
   subheading: "Led by our experts. Built on doing it right.",
   body: [
     "Midwest Tint & Detail is a locally owned shop in the heart of Plymouth, Michigan, built on a simple idea: treat every vehicle like it is your own, and do the work right the first time. Our experts are hands-on with every job, and that hands-on standard is exactly why customers keep coming back. When you call, you talk to the people doing the work, and that accountability shows up in the finish.",
-    "We focus on what we do best: premium ceramic window tinting, paint correction, ceramic coating, and interior and exterior detailing. We use quality ceramic film instead of cheap dyed film, we take the time to do clean, careful installs, and we back every tint install with a lifetime warranty. We would rather earn a customer for years than win one on price, and that approach has built a 5.0 Google rating and more than 140 five-star reviews from drivers across Metro Detroit.",
+    "We focus on what we do best: premium ceramic window tinting, paint correction, ceramic coating, and interior and exterior detailing. We use quality ceramic film instead of cheap dyed film, we take the time to do clean, careful installs, and we back every tint install with a lifetime warranty. We would rather earn a customer for years than win one on price, and that approach has built a 5.0 Google rating and more than 150 five-star reviews from drivers across Metro Detroit.",
     "Reviews tell the story better than we can, customers say their cars look and smell brand new and that the service was professional, courteous, and on time, every time. Whether you just picked up a new car or want to protect one you love, we would be glad to help.",
   ],
   pillars: [
@@ -540,7 +540,7 @@ export const QUOTE = {
     contact: { header: "Where should we send your quote?", helper: "Just your name and the best number to reach you. We will follow up fast with your exact quote. No spam, ever." },
     review: { header: "Review and send", helper: "Make sure everything looks right, then send. We will reach out shortly with your free, no-pressure quote." },
   },
-  trustMicro: "5.0 stars · 140+ reviews · Lifetime warranty · No spam, no pressure",
+  trustMicro: "5.0 stars · 150+ reviews · Lifetime warranty · No spam, no pressure",
   submit: "Send My Free Quote",
   success:
     "You are all set. Thanks for reaching out to Midwest Tint & Detail. Somebody from our team will reach out shortly from (313) 729-0005 to confirm your quote and book your install, so keep an eye out for that number. Need it sooner? Call us anytime at (313) 729-0005.",
@@ -553,7 +553,7 @@ export const SEO: Record<string, { title: string; description: string }> = {
   home: {
     title: "Window Tinting in Plymouth, MI | Midwest Tint & Detail",
     description:
-      "Premium ceramic window tinting in Plymouth, MI, by our experts. Up to 99% UV protection, serious heat rejection, and a lifetime warranty. 140+ five-star reviews. Free quote: (313) 729-0005.",
+      "Premium ceramic window tinting in Plymouth, MI, by our experts. Up to 99% UV protection, serious heat rejection, and a lifetime warranty. 150+ five-star reviews. Free quote: (313) 729-0005.",
   },
   "window-tint": {
     title: "Ceramic Window Tinting Plymouth, Northville & Canton MI | Midwest Tint & Detail",
@@ -588,7 +588,7 @@ export const SEO: Record<string, { title: string; description: string }> = {
   about: {
     title: "About Midwest Tint & Detail | Led by Our Experts | Plymouth, MI",
     description:
-      "Midwest Tint & Detail is a locally owned Plymouth, MI, shop led by our experts. Premium ceramic tint, paint correction, coating, and detailing, backed by a lifetime warranty and 140+ five-star reviews.",
+      "Midwest Tint & Detail is a locally owned Plymouth, MI, shop led by our experts. Premium ceramic tint, paint correction, coating, and detailing, backed by a lifetime warranty and 150+ five-star reviews.",
   },
   contact: {
     title: "Get a Free Quote | Window Tinting & Detailing Plymouth MI | Midwest Tint & Detail",

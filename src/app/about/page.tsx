@@ -60,7 +60,7 @@ export default function AboutPage() {
                 </span>
               </div>
               <span className="hidden sm:block h-4 w-px bg-[var(--hairline-col)]" aria-hidden="true" />
-              <span className="text-sm text-silver">140+ five-star reviews</span>
+              <span className="text-sm text-silver">150+ five-star reviews</span>
               <span className="hidden sm:block h-4 w-px bg-[var(--hairline-col)]" aria-hidden="true" />
               <span className="text-sm text-silver">{BRAND.address.city}, {BRAND.address.state}</span>
             </div>

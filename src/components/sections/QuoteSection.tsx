@@ -178,7 +178,7 @@ export default function QuoteSection() {
                 <span className="text-light font-medium">5.0</span>
                 <span className="text-muted">·</span>
                 <span className="text-silver text-[0.95rem]">
-                  140+ five-star reviews
+                  150+ five-star reviews
                 </span>
               </div>
             </Reveal>
