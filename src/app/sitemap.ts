@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/ceramic-coating", priority: 0.9 },
     { path: "/detailing", priority: 0.9 },
     { path: "/gallery", priority: 0.7 },
+    { path: "/blog", priority: 0.6 },
     { path: "/about", priority: 0.7 },
     { path: "/contact", priority: 0.7 },
     ...CITIES.map((c) => ({ path: `/window-tinting/${c.slug}`, priority: 0.8 })),

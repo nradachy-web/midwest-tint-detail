@@ -382,3 +382,72 @@ select.field {
     scroll-behavior: auto !important;
   }
 }
+
+/* ============================================================
+   Soro blog embed — editorial "paper on dark" reading surface.
+   Soro injects its post markup into #soro-blog at runtime; these
+   rules keep that content legible on the light panel and on-brand.
+   They are harmless no-ops if Soro renders inside its own iframe.
+   ============================================================ */
+.soro-surface {
+  background: #ffffff;
+  border: 1px solid rgba(175, 192, 203, 0.18);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+#soro-blog {
+  min-height: 280px;
+}
+#soro-blog,
+#soro-blog p,
+#soro-blog li,
+#soro-blog td {
+  color: #2a343b;
+}
+#soro-blog h1,
+#soro-blog h2,
+#soro-blog h3,
+#soro-blog h4,
+#soro-blog h5 {
+  color: #0d1417;
+  font-family: var(--font-display);
+}
+#soro-blog a {
+  color: var(--color-cyan-700);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+#soro-blog a:hover {
+  color: var(--color-cyan-deep);
+}
+#soro-blog img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+/* loading state — overlays the reserved #soro-blog space until Soro paints */
+.soro-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  color: var(--color-muted);
+}
+.soro-spinner {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  border: 2px solid #d7dde2;
+  border-top-color: var(--color-cyan-700);
+  animation: soro-spin 0.8s linear infinite;
+}
+@keyframes soro-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

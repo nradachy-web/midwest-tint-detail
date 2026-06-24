@@ -50,6 +50,7 @@ export const NAV_LINKS = [
   { href: "/ceramic-coating", label: "Ceramic Coating" },
   { href: "/detailing", label: "Detailing" },
   { href: "/gallery", label: "Gallery" },
+  { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
 ] as const;
 
@@ -578,6 +579,11 @@ export const SEO: Record<string, { title: string; description: string }> = {
     title: "Tint & Detail Gallery | Before & After | Midwest Tint & Detail Plymouth MI",
     description:
       "See real before-and-after results from Midwest Tint & Detail in Plymouth, MI. Ceramic tint, paint correction, ceramic coating, and detailing. Drag to compare, then get a free quote.",
+  },
+  blog: {
+    title: "Tint & Detail Tips & Care Guides | Midwest Tint & Detail Blog | Plymouth, MI",
+    description:
+      "Ceramic tint care, paint correction, ceramic coating, and car detailing guides from Midwest Tint & Detail in Plymouth, MI. Straight answers from Moe and the team. Free quote: (313) 729-0005.",
   },
   about: {
     title: "About Midwest Tint & Detail | Owner Led by Moe | Plymouth, MI",
