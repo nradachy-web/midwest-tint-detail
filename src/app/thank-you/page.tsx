@@ -4,6 +4,7 @@ import Button from "@/components/ui/Button";
 import Reveal from "@/components/ui/Reveal";
 import Hairline from "@/components/fx/Hairline";
 import BackgroundFX from "@/components/fx/BackgroundFX";
+import QuoteConversion from "@/components/tracking/QuoteConversion";
 import { BRAND, QUOTE } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
 export default function ThankYouPage() {
   return (
     <main className="relative min-h-[70vh] overflow-hidden pt-32 pb-24">
+      <QuoteConversion />
       <BackgroundFX />
 
       <div className="container-site relative z-10">

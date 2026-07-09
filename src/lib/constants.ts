@@ -605,6 +605,19 @@ export const SEO: Record<string, { title: string; description: string }> = {
 export const WEB3FORMS_KEY =
   process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "15b7e402-e68d-40cd-9507-b744e1540b8b";
 
+// ---------------- Google Ads conversion tracking ----------------
+// Google tag + conversion labels for Ads account 543-106-7697 (CID 5431067697).
+// Labels come from the account's conversion actions; if an action is ever
+// deleted and recreated in Google Ads its label changes and must be updated here.
+export const GADS = {
+  tagId: "AW-18204523785",
+  labels: {
+    quoteForm: "AW-18204523785/XbtCCI_nxs0cEIn6y-hD", // "Website lead - Quote form" (primary)
+    phoneClick: "AW-18204523785/8t5ACJLnxs0cEIn6y-hD", // "Website call click" (primary)
+    emailClick: "AW-18204523785/4YftCOqv380cEIn6y-hD", // "Website email click" (secondary)
+  },
+} as const;
+
 // ---------------- CITY / LOCAL SEO PAGES ----------------
 export interface City {
   slug: string;

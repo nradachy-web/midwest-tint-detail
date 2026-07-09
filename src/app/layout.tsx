@@ -5,7 +5,8 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import StickyCallBar from "@/components/layout/StickyCallBar";
-import { BRAND, SEO, SITE_URL } from "@/lib/constants";
+import CtaClickTracking from "@/components/tracking/CtaClickTracking";
+import { BRAND, GADS, SEO, SITE_URL } from "@/lib/constants";
 
 const display = Chakra_Petch({
   subsets: ["latin"],
@@ -125,7 +126,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${display.variable} ${body.variable}`}>
       <body className="min-h-screen bg-ink text-silver antialiased overflow-x-hidden">
-        {/* Google tag (gtag.js) - GA4 */}
+        {/* Google tag (gtag.js) - GA4 + Google Ads conversion tracking */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-QS5S0WZ5TH"
           strategy="afterInteractive"
@@ -136,12 +137,14 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-QS5S0WZ5TH');
+            gtag('config', '${GADS.tagId}');
           `}
         </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
         />
+        <CtaClickTracking />
         <Navbar />
         <main>{children}</main>
         <Footer />
