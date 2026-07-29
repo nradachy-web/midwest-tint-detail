@@ -39,6 +39,7 @@ export default function QuoteForm() {
   const [color, setColor] = useState("");
   const [services, setServices] = useState<string[]>(["window-tint"]);
   const [contact, setContact] = useState({ name: "", phone: "", email: "", zip: "", notes: "" });
+  const [smsConsent, setSmsConsent] = useState({ marketing: false, nonMarketing: false });
   const [errors, setErrors] = useState<Record<string, string>>({});
 
   const onVehicle = useCallback((v: VehicleSelection) => setVehicle((p) => ({ ...p, ...v })), []);
@@ -80,6 +81,9 @@ export default function QuoteForm() {
       contact.email ? `Email: ${contact.email}` : "",
       contact.zip ? `ZIP: ${contact.zip}` : "",
       contact.notes ? `Notes: ${contact.notes}` : "",
+      ``,
+      `SMS marketing consent: ${smsConsent.marketing ? "Yes" : "No"}`,
+      `SMS non-marketing consent (order updates, appointment reminders): ${smsConsent.nonMarketing ? "Yes" : "No"}`,
       utm ? `\nSource: ${JSON.stringify(utm)}` : "",
     ].filter(Boolean).join("\n");
 
@@ -99,6 +103,8 @@ export default function QuoteForm() {
             email: contact.email || BRAND.email,
             vehicle: vehicleStr,
             services: serviceLabels.join(", "),
+            sms_marketing_consent: smsConsent.marketing ? "Yes" : "No",
+            sms_nonmarketing_consent: smsConsent.nonMarketing ? "Yes" : "No",
             message,
           }),
         });
@@ -236,6 +242,24 @@ export default function QuoteForm() {
                   <label className="mb-1.5 block text-sm font-medium text-silver">Anything we should know? <span className="text-muted">(optional)</span></label>
                   <textarea className="field resize-none" rows={3} value={contact.notes} onChange={(e) => setContact((c) => ({ ...c, notes: e.target.value }))} placeholder="Timeline, specific questions, anything we should know..." />
                 </div>
+                <div className="space-y-3 rounded-sm border border-steel bg-graphite/40 p-4">
+                  <ConsentCheckbox
+                    checked={smsConsent.marketing}
+                    onChange={() => setSmsConsent((c) => ({ ...c, marketing: !c.marketing }))}
+                    label={QUOTE.smsConsent.marketing}
+                  />
+                  <ConsentCheckbox
+                    checked={smsConsent.nonMarketing}
+                    onChange={() => setSmsConsent((c) => ({ ...c, nonMarketing: !c.nonMarketing }))}
+                    label={QUOTE.smsConsent.nonMarketing}
+                  />
+                  <p className="text-xs text-muted">
+                    Consent is not a condition of purchase. See our{" "}
+                    <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="underline transition-colors hover:text-cyan">Privacy Policy</a>{" "}
+                    and{" "}
+                    <a href="/terms" target="_blank" rel="noopener noreferrer" className="underline transition-colors hover:text-cyan">Terms &amp; Conditions</a>.
+                  </p>
+                </div>
               </div>
             )}
 
@@ -252,6 +276,10 @@ export default function QuoteForm() {
                   <ReviewRow label="Phone" value={contact.phone} />
                   {contact.email && <ReviewRow label="Email" value={contact.email} />}
                   {contact.notes && <ReviewRow label="Notes" value={contact.notes} />}
+                  <ReviewRow
+                    label="Text consent"
+                    value={`Marketing: ${smsConsent.marketing ? "Yes" : "No"} · Order updates: ${smsConsent.nonMarketing ? "Yes" : "No"}`}
+                  />
                 </div>
                 <div className="flex items-start gap-3 rounded-sm border border-cyan/30 bg-cyan/10 px-4 py-3">
                   <Phone className="mt-0.5 h-4 w-4 shrink-0 text-cyan" aria-hidden />
@@ -302,6 +330,24 @@ export default function QuoteForm() {
         )}
       </div>
     </div>
+  );
+}
+
+function ConsentCheckbox({ checked, onChange, label }: { checked: boolean; onChange: () => void; label: string }) {
+  return (
+    <label className="flex cursor-pointer items-start gap-3">
+      <input type="checkbox" checked={checked} onChange={onChange} className="sr-only" />
+      <span
+        aria-hidden
+        className={cn(
+          "mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded border transition-colors",
+          checked ? "border-cyan bg-cyan" : "border-muted"
+        )}
+      >
+        {checked && <Check className="h-3.5 w-3.5 text-ink" strokeWidth={3} />}
+      </span>
+      <span className="text-xs leading-relaxed text-silver">{label}</span>
+    </label>
   );
 }
 

@@ -98,7 +98,16 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-[var(--hairline-col)] pt-6 text-center text-xs text-muted sm:flex-row sm:text-left">
-          <p>© {BRAND.name}. All rights reserved. Plymouth, Michigan.</p>
+          <p>
+            © {BRAND.name}. All rights reserved. Plymouth, Michigan. ·{" "}
+            <Link href="/privacy-policy" className="transition-colors hover:text-cyan">
+              Privacy Policy
+            </Link>{" "}
+            ·{" "}
+            <Link href="/terms" className="transition-colors hover:text-cyan">
+              Terms &amp; Conditions
+            </Link>
+          </p>
           <p className="text-silver">
             Lifetime warranty on all window tint installs · 150+ five-star reviews · Installed by our experts
           </p>

@@ -542,6 +542,13 @@ export const QUOTE = {
   },
   trustMicro: "5.0 stars · 150+ reviews · Lifetime warranty · No spam, no pressure",
   submit: "Send My Free Quote",
+  // SMS opt-in wording required for A2P 10DLC compliance. Do not paraphrase.
+  smsConsent: {
+    marketing:
+      "I consent to receive marketing text messages from Midwest Tint & Detail at the phone number provided. Frequency may vary. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out.",
+    nonMarketing:
+      "I consent to receive non-marketing text messages from Midwest Tint & Detail about my order updates, appointment reminders, etc. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out.",
+  },
   success:
     "You are all set. Thanks for reaching out to Midwest Tint & Detail. Somebody from our team will reach out shortly from (313) 729-0005 to confirm your quote and book your install, so keep an eye out for that number. Need it sooner? Call us anytime at (313) 729-0005.",
   error:
@@ -594,6 +601,16 @@ export const SEO: Record<string, { title: string; description: string }> = {
     title: "Get a Free Quote | Window Tinting & Detailing Plymouth MI | Midwest Tint & Detail",
     description:
       "Get a fast, free, exact quote from Midwest Tint & Detail in Plymouth, MI. Pick your vehicle, choose your services, no pressure. Call us at (313) 729-0005 or build your quote online.",
+  },
+  privacy: {
+    title: "Privacy Policy | Midwest Tint & Detail | Plymouth, MI",
+    description:
+      "How Midwest Tint & Detail collects, uses, and protects your information, including our text messaging practices and your opt-out choices.",
+  },
+  terms: {
+    title: "Terms & Conditions | Midwest Tint & Detail | Plymouth, MI",
+    description:
+      "The terms that govern use of the Midwest Tint & Detail website, quotes, services, and our text messaging program.",
   },
 };
 

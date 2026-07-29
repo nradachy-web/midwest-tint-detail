@@ -144,6 +144,14 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
         />
+        {/* GoHighLevel / LeadConnector chat widget */}
+        <Script
+          src="https://widgets.leadconnectorhq.com/loader.js"
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="6a695ea0883a38e90e139aeb"
+          data-source="WEB_USER"
+          strategy="lazyOnload"
+        />
         <CtaClickTracking />
         <Navbar />
         <main>{children}</main>

@@ -16,6 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/blog", priority: 0.6 },
     { path: "/about", priority: 0.7 },
     { path: "/contact", priority: 0.7 },
+    { path: "/privacy-policy", priority: 0.3 },
+    { path: "/terms", priority: 0.3 },
     ...CITIES.map((c) => ({ path: `/window-tinting/${c.slug}`, priority: 0.8 })),
   ];
 
