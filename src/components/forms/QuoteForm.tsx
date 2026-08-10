@@ -10,6 +10,36 @@ import VehicleSearch, { type VehicleSelection } from "./VehicleSearch";
 
 const STEPS = ["Vehicle", "Services", "Contact", "Review"] as const;
 
+// Modern Apex attribution rails (public/apex-attribution.js, loaded in the
+// root layout). attach() is additive and fire-and-forget: the Web3Forms path
+// stays the delivery lane and this call never blocks or throws.
+declare global {
+  interface Window {
+    apexAttribution?: {
+      attach: (fields: {
+        name?: string;
+        email?: string;
+        phone?: string;
+        message?: string;
+        isTest?: boolean;
+      }) => void;
+    };
+  }
+}
+
+// Mirror the submission into the Modern Apex lead ledger after the normal
+// submit path has succeeded. ?apx_test=1 on the page URL marks the row as a
+// rollout test so it never counts as a real lead. All failures swallowed:
+// attribution must never surface on the visitor's submit experience.
+function attachToApexLedger(fields: { name: string; email: string; phone: string; message: string }) {
+  try {
+    const isTest = new URLSearchParams(window.location.search).get("apx_test") === "1";
+    window.apexAttribution?.attach(isTest ? { ...fields, isTest: true } : fields);
+  } catch {
+    /* swallowed by contract */
+  }
+}
+
 const variants = {
   enter: (d: number) => ({ x: d > 0 ? 60 : -60, opacity: 0 }),
   center: { x: 0, opacity: 1 },
@@ -113,6 +143,7 @@ export default function QuoteForm() {
         // No key configured yet: log so dev/test still flows to the conversion page.
         console.warn("[QuoteForm] WEB3FORMS_KEY not set. Lead not delivered:", message);
       }
+      attachToApexLedger({ name: contact.name, email: contact.email, phone: contact.phone, message });
       router.push("/thank-you");
     } catch {
       setSubmitError(QUOTE.error);

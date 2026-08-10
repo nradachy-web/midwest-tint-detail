@@ -152,6 +152,15 @@ export default function RootLayout({
           data-source="WEB_USER"
           strategy="lazyOnload"
         />
+        {/* Modern Apex attribution rails: first-party click id capture, form
+            ledger, tel: click reporting. Vendored copy in public/, served from
+            this origin. The token is public by design; the endpoint defaults
+            inside the script. */}
+        <Script
+          src="/apex-attribution.js"
+          data-token="86575eff1f971a6a2d0524d3b90bc9ed"
+          strategy="afterInteractive"
+        />
         <CtaClickTracking />
         <Navbar />
         <main>{children}</main>
