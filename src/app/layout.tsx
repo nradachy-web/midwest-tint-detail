@@ -161,6 +161,12 @@ export default function RootLayout({
           data-token="86575eff1f971a6a2d0524d3b90bc9ed"
           strategy="afterInteractive"
         />
+        {/* CallRail session DNI: swaps the displayed (313) 729-0005 for a
+            visitor-specific pool number so calls are attributed per session. */}
+        <Script
+          src="https://cdn.callrail.com/companies/583423569/dfe22760b4c97cf4e299/12/swap.js"
+          strategy="afterInteractive"
+        />
         <CtaClickTracking />
         <Navbar />
         <main>{children}</main>
